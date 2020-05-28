@@ -1,1 +1,1 @@
-# {hello world} 👋, as a CV 📝
+# {hello world} 👋 as a CV 📝
