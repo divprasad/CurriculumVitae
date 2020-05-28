@@ -1,2 +1,1 @@
-# CurriculumVitae
-my hello world, as a CV
+# my hello world, as a CV
