@@ -1,0 +1,242 @@
+\documentclass[margin,line]{res}
+\usepackage[margin=.4in]{geometry}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+\usepackage{marvosym}
+\usepackage{wasysym}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand\headrule{}
+
+\oddsidemargin -.65in
+\evensidemargin -.65in
+\textwidth=6.5in
+\itemsep=0in
+\parsep=0in
+
+\usepackage[symbol,bottom]{footmisc}
+\usepackage[x11names]{xcolor} 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{svg}
+\usepackage{float}
+\usepackage{marvosym}
+\usepackage{caption}
+\usepackage{array} 
+\captionsetup{labelfont=bf}
+\usepackage[lofdepth]{subfig}
+\usepackage[nodayofweek]{datetime}
+\usepackage{setspace}\onehalfspacing
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyperlinks in pdfs 
+\usepackage{fancyhdr}
+
+% =============================
+% DEFINE YOUR FAV COLOURS HERE
+% =============================
+
+\definecolor{myorange}{HTML}{F46524}
+\definecolor{myblue}{HTML}{191970}
+\definecolor{mygray}{HTML}{696969}
+\definecolor{mycyan}{HTML}{074774}
+
+\newcommand{\MYhref}[3][mycyan]{\href{#2}{\color{#1}{#3}}}%
+
+            
+% ==============================
+% DEFINITIONS FOR BULLET FORMAT
+% ==============================
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0in}}}{\end{list}}
+
+\newenvironment{list2}{
+  %\begin{list}{$\bullet$}{%
+  \begin{list}{$\circ$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.25in}}}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered	the name and address are centered at the top of the
+%		page (default)
+%
+%   line	the name is the left with a horizontal line then 
+%		the address to the right
+%
+%   overlapped	the section titles overlap the body text (default)
+%
+%   margin	the section titles are to the left of the body text
+%		
+%   11pt	use 11 point fonts instead of 10 point fonts
+%
+%   12pt	use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   \Resume	prints the word resume but typeset nicely
+%
+%   \newsectionwidth{dimen}
+%		defines the amount of space the labels extend
+%		into the left margin.
+%		DO NOT TRY to change any of the dimensions
+%		yourself.  You will probably confuse the style file.
+%
+%   \name{text} defines your name
+%
+%   \address{text}
+%		defines your address
+%		this can be called twice if you have two addresses
+%		use \\'s to indicate where either line breaks or
+%		comas should go
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace{-4in}
+
+%change hyperlink to linkedin and name here 
+\name{{{\MYhref{https://www.linkedin.com/in/}{{\textsc{\Resume \space - John Doe}}}}}} 
+
+\vspace*{-.025in}
+% hyperlink your email address here
+\address{\normalsize{{\MYhref{mailto:your.email@domain.com}{\textbf{ \Letter \space \texttt{your\{DOT\}email\{AT\}domain\{DOT\}com}}}}} \space  {\MYhref{https://goo.gl/maps/}{\textbf {\faMapMarker \space \textsf{Secret}}}} %can hyperlink your city or detailed address here 
+\space {\textcolor{mycyan}{\text{\textbf{\large{\faMobile}\normalsize{\space +1 007 1234 007}}}}} }
+
+
+\begin{resume}
+
+\vspace*{-.15in}
+\section{\sc Interests}
+{ {\bf }  stealth maneuvers, computational cryptography, special intelligence} 
+
+\vspace*{-.1in}
+\section{\sc Education}
+
+{\bf Fancy Master's degree } \hfill {\bf 2017}\\
+\vspace{-.2in}
+\begin{list2}
+\item [] \textsf{Fancy School, memorable city} \hfill {cumulative grade - \bf 4/4}
+\end{list2}
+
+\vspace*{-.15in}
+
+{\bf Fancy Bachelor's degree} \hfill {\bf 2007}\\
+\vspace{-.2in}
+\begin{list2}
+\item [] \textsf{Cool School, nice city} \hfill {cumulative grade - \bf 4/4}
+\end{list2}
+\vspace*{-0.1in}
+\section{\sc Professional Experience}
+
+{\bf Experience \#1}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item what contribution you made towards \textsf{some project}
+\end{list2}
+
+\vspace*{-.15in}
+{\bf Experience \#2} \hfill {when-you-did-it}
+
+\begin{list2}
+\item what did you learn from this? in a manner that is transferrable to other skills 
+\end{list2}
+
+\vspace*{-.15in}
+{\bf Experience \#3}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item what did you learn from this? in a manner that is transferrable to other skills 
+\end{list2}
+
+\vspace*{-0.1in}
+\section{\sc Key Academic Projects} 
+
+{\bf Project \#1}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item main responsibility, and how you excelled; key achievements and success metrics
+\end{list2}
+
+\vspace*{-.15in}
+{\bf Project \#2}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item main responsibility, and how you excelled; key achievements and success metrics
+
+\end{list2}
+
+\vspace*{-.15in}
+{\bf Fellowship \#1}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item main responsibility, and how you excelled; key achievements and success metrics
+\end{list2}
+
+\vspace*{-.15in}
+{\bf Internship \#1}, {\sf where-you-did-it} \hfill {when-you-did-it}
+
+\begin{list2}
+\item main responsibility, and how you excelled; key achievements and success metrics
+\end{list2}
+
+\vspace*{-0.1in}
+
+\section{\sc Academic Achievements} 
+\begin{list1}
+\item []\textbf{scholarship} {\sf by-whom} \hfill {when-you-did-it}
+\item []\textbf{Scholarship for X project } {\sf by-whom} \hfill {when-you-did-it}
+\item [] Secured \textit{some-merit} in \textit{some-exam} \hfill {when-you-did-it}
+\item [] {\bf Graduate Record Examination:}  Quantitative: {\bf 16x/170}, Verbal: {\bf 16x/170}, Total: {\bf 32x/340} \hfill {when}
+\end{list1}
+
+\vspace*{-0.1in}
+
+\section{\sc Programming Skills} 
+\begin{list1}
+    \item [] Programming languages: \texttt{Python}, \texttt{C++}
+    \item [] Scripting languages: \texttt{Bash}, \texttt{R}, \texttt{Scilab}, \texttt{Matlab}, \LaTeX
+    \item [] Workflows: \texttt{TensorFlow}, \texttt{conda}, \texttt{git}, \texttt{Jupyter}, \texttt{Snakemake}
+    \vspace*{.075in}
+\end{list1}
+
+\vspace*{-0.1in}
+
+\section{\sc Positions of Responsibility} 
+\begin{list1}
+\item []{\bf Volunteer X}, \textsf{where} \hfill {when-you-did-it}
+\item []{\bf School Secretary}, \textsf{where} \hfill {when-you-did-it}
+%\item []{\bf Sergeant, National Cadet Corps}, \textsf{4-MP Battalion} \hfill {when-you-did-it}
+\end{list1}
+
+\vspace*{-0.1in}
+
+\section{\sc Extracurricular} 
+\begin{list1}
+\item [] \textbf{Clubs:} that you were involved with
+
+\item [] {\bf Interests:} meditation or some cool hobbies 
+
+\item [] \textbf{Sports:} to flex some muscle 
+
+\item [] \textbf{Hobbies:} to show some other interesting parts of your personality
+
+\end{list1}
+
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
